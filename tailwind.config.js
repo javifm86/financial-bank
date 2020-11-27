@@ -1,13 +1,14 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
   purge: ['./public/**/*.html', './src/**/*.vue'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'regal-blue': '#243c5a'
+        blue: colors.lightBlue,
+        yellow: colors.amber,
+        green: colors.emerald
       }
     }
   },
