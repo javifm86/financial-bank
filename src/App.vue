@@ -1,30 +1,26 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <Menu />
+  <header class="bg-white shadow">
+    <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold leading-tight text-gray-900">Hello world</h1>
+    </div>
+  </header>
+  <main aria-live="polite" class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 flex-grow flex-shrink-0">
+    <router-view />
+  </main>
+  <Footer />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Menu from '@/layout/Menu.vue'; // @ is an alias to /src
+import Footer from '@/layout/Footer.vue'; // @ is an alias to /src
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default defineComponent({
+  name: 'App',
+  components: {
+    Menu,
+    Footer
+  }
+});
+</script>

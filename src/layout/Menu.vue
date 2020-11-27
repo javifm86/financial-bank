@@ -1,0 +1,37 @@
+<template>
+  <nav class="bg-gray-700">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 border-b border-gray-500">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <!-- prettier-ignore -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2790 2790" class="h-8 w-8 fill-current text-blue-500" preserveAspectRatio="xMidYMid meet"><g id="layer101" stroke="none"><path d="M1708 2672 c-103 -48 -189 -90 -193 -93 -5 -6 418 -936 433 -951 4 -3 55 124 114 284 l107 290 -127 276 c-70 151 -131 277 -137 278 -5 2 -94 -36 -197 -84z"/><path d="M726 2514 c-42 -114 -75 -207 -74 -209 11 -7 991 -366 993 -363 2 2 -54 129 -125 283 l-128 280 -289 107 c-158 59 -291 107 -294 108 -4 0 -41 -93 -83 -206z"/><path d="M335 2040 c-180 -83 -279 -134 -277 -142 2 -7 42 -98 89 -201 68 -148 90 -187 102 -182 50 18 941 431 941 436 0 3 -127 53 -282 110 -155 57 -284 105 -287 106 -3 2 -132 -56 -286 -127z"/><path d="M2122 1668 c-100 -270 -180 -493 -178 -496 6 -5 536 237 553 252 12 11 228 586 221 590 -9 6 -395 146 -404 146 -5 0 -92 -221 -192 -492z"/><path d="M593 1522 c-150 -70 -276 -131 -281 -137 -5 -5 -46 -111 -92 -235 -45 -124 -93 -253 -105 -286 l-23 -62 206 -76 c113 -42 207 -74 209 -72 2 2 80 210 173 462 94 253 177 476 185 497 8 20 11 37 7 36 -4 -1 -129 -58 -279 -127z"/><path d="M2097 1086 c-262 -121 -474 -223 -470 -226 11 -9 558 -210 572 -210 18 0 561 252 561 260 0 10 -171 383 -179 391 -3 3 -221 -93 -484 -215z"/><path d="M860 1198 c0 -3 -47 -133 -105 -288 -58 -156 -105 -289 -105 -295 0 -9 246 -554 254 -563 6 -5 391 178 394 188 3 9 -421 944 -434 959 -2 2 -4 2 -4 -1z"/><path d="M1170 870 c0 -8 247 -551 255 -558 2 -2 135 -53 295 -112 283 -105 291 -107 299 -86 105 278 142 388 135 395 -5 5 -214 84 -464 176 -250 92 -470 174 -487 181 -18 7 -33 9 -33 4z"/></g></svg>
+          </div>
+          <div class="flex space-x-4 ml-10">
+            <router-link
+              active-class="bg-gray-900 text-white"
+              class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+              to="/"
+              >Home</router-link
+            >
+            <router-link
+              active-class="bg-gray-900 text-white"
+              class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+              to="/about"
+              >About</router-link
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Menu',
+  props: { msg: String }
+});
+</script>
