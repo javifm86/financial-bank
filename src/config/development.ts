@@ -2,7 +2,7 @@ import { Config } from './models/config';
 
 const config: Config = {
   api: {
-    baseUrl: '',
+    baseUrl: 'http://localhost:8080/api',
     timeout: 1000
   }
 };

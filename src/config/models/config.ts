@@ -1,6 +1,6 @@
 interface Api {
-  baseUrl: string;
-  timeout: number;
+  readonly baseUrl: string;
+  readonly timeout: number;
 }
 
 export interface Config {
