@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/home/Home.vue';
 
 const routes: Array<RouteRecordRaw> = [
@@ -6,6 +6,31 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/analysis',
+    name: 'Analysis & news',
+    component: () => import(/* webpackChunkName: "analysis" */ '../views/analysis/AnalysisRouter.vue'),
+    children: [
+      {
+        path: 'news/:id',
+        name: 'News detail',
+        props: true,
+        component: () => import(/* webpackChunkName: "analysis" */ '../views/analysis/NewsDetail.vue')
+      }
+    ]
+  },
+  {
+    path: '/wealth',
+    name: 'Financial wealth',
+    component: () => import(/* webpackChunkName: "wealth" */ '../views/wealth/WealthRouter.vue'),
+    children: [
+      {
+        path: 'summary',
+        name: 'Summary',
+        component: () => import(/* webpackChunkName: "wealth" */ '../views/wealth/Summary.vue')
+      }
+    ]
   },
   {
     path: '/about',
@@ -18,7 +43,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 });
 
