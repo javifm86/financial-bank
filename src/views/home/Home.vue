@@ -67,7 +67,7 @@
               </div>
             </div>
             <div class="bg-gray-50 px-8 py-3">
-              <a href="#" class="text-blue-600 hover:underline">Breawdown</a>
+              <router-link class="text-blue-600 hover:underline" to="/wealth/summary">Breakdown</router-link>
             </div>
           </div>
           <div class="bg-white overflow-hidden rounded-xl shadow">
@@ -112,7 +112,11 @@
             <div class="inline-block px-2 py-1 font-semibold rounded-xl mb-4 text-sm" :class="item.className">
               {{ item.tag }}
             </div>
-            <h3 class="text-2xl font-semibold mb-5">{{ item.title }}</h3>
+            <h3 class="text-2xl font-semibold mb-5">
+              <router-link :to="'/analysis/news/' + item.id" class="text-gray-900 hover:underline">{{
+                item.title
+              }}</router-link>
+            </h3>
             <p class="text-gray-500 text-lg mb-6">{{ item.intro }}</p>
             <div class="flex">
               <div class="flex-shrink-0 w-12 h-12">
@@ -268,7 +272,7 @@ export default defineComponent({
     homeService
       .getNews()
       .then((response) => {
-        this.lastNews = response.data.news.map(this.formatNews);
+        this.lastNews = response.data.map(this.formatNews);
       })
       .catch((e) => {
         console.warn(e);

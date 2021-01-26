@@ -17,10 +17,6 @@ export interface Markets {
   updowns: MarketIdUpDown[];
 }
 
-export interface NewsResponse {
-  news: News[];
-}
-
 export interface News {
   id: number;
   author: string;

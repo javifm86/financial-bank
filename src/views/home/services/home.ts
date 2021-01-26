@@ -1,12 +1,12 @@
 import http from '@/utils/http-common';
-import { Markets, NewsResponse } from './models/home-services';
+import { Markets, News } from './models/home-services';
 
 class HomeService {
   getMarkets() {
     return http.get<Markets>('/markets');
   }
   getNews() {
-    return http.get<NewsResponse>('/lastNews');
+    return http.get<News[]>('/lastNews');
   }
 }
 
