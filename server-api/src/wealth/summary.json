@@ -1,0 +1,334 @@
+{
+  "wealthSummary": [
+    {
+      "id": 1,
+      "total": 125032000,
+      "currency": "EUR",
+      "compositions": [
+        {
+          "name": "Domestic exchange",
+          "value": 63200,
+          "percentage": 0.06301555159002943,
+          "currency": "EUR"
+        },
+        {
+          "name": "International exchange",
+          "value": 347102,
+          "percentage": 0.34608898715193664,
+          "currency": "EUR"
+        },
+        {
+          "name": "CFD's",
+          "value": 0,
+          "percentage": 0,
+          "currency": "EUR"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0,
+          "percentage": 0,
+          "currency": "EUR"
+        },
+        {
+          "name": "Guarantees and adjustments",
+          "value": -530,
+          "percentage": -5.284532016,
+          "currency": "EUR"
+        },
+        {
+          "name": "Balance",
+          "value": 99853478,
+          "percentage": 99.6,
+          "currency": "EUR"
+        }
+      ],
+      "graphs": {
+        "active": [
+          {
+            "description": "Fixed income",
+            "percentage": 99.59089546125803
+          },
+          {
+            "description": "Equity market",
+            "percentage": 0.4091045387419661
+          }
+        ],
+        "product": [
+          {
+            "description": "Domestic exchange",
+            "percentage": 0.06301555159002943
+          },
+          {
+            "description": "International exchange",
+            "percentage": 0.34608898715193664
+          },
+          {
+            "description": "CFD's",
+            "percentage": 0
+          },
+          {
+            "description": "Guarantees and adjustments",
+            "percentage": -5.284532016
+          },
+          {
+            "description": "Balance",
+            "percentage": 99.6
+          }
+        ],
+        "geographic": [
+          {
+            "description": "Spain",
+            "percentage": 0.15403288309586596
+          },
+          {
+            "description": "Europe",
+            "percentage": 0.845967116904134
+          }
+        ]
+      },
+      "evolution": [
+        {
+          "dateValue": "2019-12-31T20:00:00Z",
+          "value": 100.0,
+          "total": 293928.77
+        },
+        {
+          "dateValue": "2020-01-31T20:00:00Z",
+          "value": 103.04556440664179,
+          "total": 302880.56
+        },
+        {
+          "dateValue": "2020-02-29T20:00:00Z",
+          "value": 105.03982648585233,
+          "total": 308742.27
+        },
+        {
+          "dateValue": "2020-03-31T20:00:00Z",
+          "value": 105.89256369834091,
+          "total": 311248.70999999996
+        },
+        {
+          "dateValue": "2020-04-30T20:00:00Z",
+          "value": 106.96929055294584,
+          "total": 314413.51999999996
+        },
+        {
+          "dateValue": "2020-05-31T20:00:00Z",
+          "value": 105.32010527584623,
+          "total": 309565.69
+        },
+        {
+          "dateValue": "2020-06-30T20:00:00Z",
+          "value": 106.94471526900202,
+          "total": 314340.88
+        },
+        {
+          "dateValue": "2020-07-31T20:00:00Z",
+          "value": 107.41117922610451,
+          "total": 315711.95
+        },
+        {
+          "dateValue": "2020-08-31T20:00:00Z",
+          "value": 106.80935236658833,
+          "total": 313943.01
+        },
+        {
+          "dateValue": "2020-09-30T20:00:00Z",
+          "value": 107.91190951170447,
+          "total": 331701.57
+        },
+        {
+          "dateValue": "2020-10-31T20:00:00Z",
+          "value": 108.41062479003452,
+          "total": 333234.53
+        },
+        {
+          "dateValue": "2020-11-30T20:00:00Z",
+          "value": 110.17389444292205,
+          "total": 338653.51
+        },
+        {
+          "dateValue": "2020-12-31T20:00:00Z",
+          "value": 110.91405753978462,
+          "total": 340928.63
+        },
+        {
+          "dateValue": "2021-01-31T20:00:00Z",
+          "value": 109.92750958419903,
+          "total": 337896.17
+        },
+        {
+          "dateValue": "2020-02-28T20:00:00Z",
+          "value": 106.09847533351979,
+          "total": 326126.45
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "total": 32681258,
+      "currency": "EUR",
+      "compositions": [
+        {
+          "name": "Investment funds",
+          "value": 31284781,
+          "percentage": 95.5,
+          "currency": "USD"
+        },
+        {
+          "name": "Pension plans",
+          "value": 1470986,
+          "percentage": 4.5,
+          "currency": "USD"
+        },
+        {
+          "name": "Balance",
+          "value": 0,
+          "percentage": 0,
+          "currency": "USD"
+        }
+      ],
+      "graphs": {
+        "active": [
+          {
+            "description": "Fixed income",
+            "percentage": 0.9959089546125803
+          },
+          {
+            "description": "Equity market",
+            "percentage": 0.004091045387419661
+          }
+        ],
+        "product": [
+          {
+            "description": "Investment funds",
+            "percentage": 95.5
+          },
+          {
+            "description": "Pension plans",
+            "percentage": 4.5
+          },
+          {
+            "description": "Balance",
+            "percentage": 0
+          }
+        ],
+        "geographic": [
+          {
+            "description": "Spain",
+            "percentage": 5.077442129899094
+          },
+          {
+            "description": "Europe",
+            "percentage": 0.47334128878891923
+          },
+          {
+            "description": "USA / Canada",
+            "percentage": 0.10693257202820348
+          },
+          {
+            "description": "Asia",
+            "percentage": 0.005671570860794569
+          },
+          {
+            "description": "Japan",
+            "percentage": 0.0018694349227476635
+          },
+          {
+            "description": "South America",
+            "percentage": 0.009774358863878993
+          },
+          {
+            "description": "Europe no Eurozone",
+            "percentage": 0.06922574196517209
+          },
+          {
+            "description": "UK",
+            "percentage": 0.08703358998254843
+          },
+          {
+            "description": "Other",
+            "percentage": 0.24564369837474553
+          }
+        ]
+      },
+      "evolution": [
+        {
+          "dateValue": "2019-12-31T20:00:00Z",
+          "value": 100.0,
+          "total": 293928.77
+        },
+        {
+          "dateValue": "2020-01-31T20:00:00Z",
+          "value": 103.04556440664179,
+          "total": 302880.56
+        },
+        {
+          "dateValue": "2020-02-29T20:00:00Z",
+          "value": 105.03982648585233,
+          "total": 308742.27
+        },
+        {
+          "dateValue": "2020-03-31T20:00:00Z",
+          "value": 105.89256369834091,
+          "total": 311248.70999999996
+        },
+        {
+          "dateValue": "2020-04-30T20:00:00Z",
+          "value": 106.96929055294584,
+          "total": 314413.51999999996
+        },
+        {
+          "dateValue": "2020-05-31T20:00:00Z",
+          "value": 105.32010527584623,
+          "total": 309565.69
+        },
+        {
+          "dateValue": "2020-06-30T20:00:00Z",
+          "value": 106.94471526900202,
+          "total": 314340.88
+        },
+        {
+          "dateValue": "2020-07-31T20:00:00Z",
+          "value": 107.41117922610451,
+          "total": 315711.95
+        },
+        {
+          "dateValue": "2020-08-31T20:00:00Z",
+          "value": 106.80935236658833,
+          "total": 313943.01
+        },
+        {
+          "dateValue": "2020-09-30T20:00:00Z",
+          "value": 107.91190951170447,
+          "total": 331701.57
+        },
+        {
+          "dateValue": "2020-10-31T20:00:00Z",
+          "value": 108.41062479003452,
+          "total": 333234.53
+        },
+        {
+          "dateValue": "2020-11-30T20:00:00Z",
+          "value": 110.17389444292205,
+          "total": 338653.51
+        },
+        {
+          "dateValue": "2020-12-31T20:00:00Z",
+          "value": 110.91405753978462,
+          "total": 340928.63
+        },
+        {
+          "dateValue": "2021-01-31T20:00:00Z",
+          "value": 109.92750958419903,
+          "total": 337896.17
+        },
+        {
+          "dateValue": "2020-02-28T20:00:00Z",
+          "value": 106.09847533351979,
+          "total": 326126.45
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Michael",
+    "surname": "Jones Williams",
+    "office": "616 E Clybourn St, Milwaukee",
+    "accountNumber": "GB82 WEST 1234 5698 7654 32",
+    "clientId": "24684688",
+    "accounts": [
+      {
+        "id": 1,
+        "alias": "Main",
+        "wealth": 125032000,
+        "operatingLimit": 27832832,
+        "balance": 27832832,
+        "currency": "EUR"
+      },
+      {
+        "id": 2,
+        "alias": "Familiar",
+        "wealth": 32681258,
+        "operatingLimit": 7832832,
+        "balance": 7832832,
+        "currency": "USD"
+      }
+    ]
+  }
+}

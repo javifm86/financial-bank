@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "start": "npm-run-all --parallel mock-api serve",
-    "mock-api": "json-server --watch ./src/server-api/db.json --port 3000 --delay 400",
+    "mock-api": "json-server --watch ./server-api/db.json --port 3000 --delay 400",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "concat-api-db": "json-concat ./server-api/src/ ./server-api/db.json",
+    "postconcat-api-db": "prettier --write ./server-api/db.json"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
@@ -38,6 +40,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^7.0.0-0",
+    "json-concat": "0.0.1",
     "json-server": "^0.16.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",

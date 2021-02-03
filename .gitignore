@@ -1,3 +1,6 @@
+#Project
+/server-api/db.json
+
 .DS_Store
 node_modules
 /dist
