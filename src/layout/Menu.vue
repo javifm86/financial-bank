@@ -17,6 +17,12 @@
             <router-link
               active-class="bg-gray-900 text-white"
               class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+              to="/wealth"
+              >Wealth</router-link
+            >
+            <router-link
+              active-class="bg-gray-900 text-white"
+              class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800"
               to="/about"
               >About</router-link
             >

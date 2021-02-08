@@ -27,6 +27,7 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: 'summary',
+        alias: '/wealth',
         name: 'Summary',
         component: () => import(/* webpackChunkName: "wealth" */ '../views/wealth/Summary.vue')
       }
