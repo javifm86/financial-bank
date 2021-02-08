@@ -11,6 +11,7 @@ import userService from '@/services/user/user';
 
 export default defineComponent({
   name: 'AccountSelector',
+  emits: ['selected'],
   data() {
     return {
       selected: store.state.idAccount
@@ -31,8 +32,8 @@ export default defineComponent({
   },
   methods: {
     update(): void {
-      console.warn(this.selected);
       store.setSelectedAccount(this.selected);
+      this.$emit('selected', this.selected);
     }
   },
   created() {
