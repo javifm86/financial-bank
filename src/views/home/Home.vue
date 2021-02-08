@@ -29,9 +29,7 @@
         </div>
       </div>
       <div class="w-full sm:w-auto">
-        <select class="w-full">
-          <option v-for="elem in accounts" :key="elem.id">{{ elem.alias }}</option>
-        </select>
+        <AccountSelector />
       </div>
     </div>
     <Alert v-else kind="error" message="User information could not be loaded" :bordered="true" />
@@ -137,11 +135,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import userService, { GetInfo, Account } from '@/services/user/user';
+import userService, { GetInfo } from '@/services/user/user';
 import homeService, { MarketIdUpDown, Market, News, NewsTag } from './services/home';
 import MainHeader from '@/components/MainHeader.vue';
 import Loading from '@/components/Loading.vue';
 import Alert from '@/components/Alert.vue';
+import AccountSelector from '@/components/AccountSelector.vue';
 import TableQuotation, { ElemQuotation } from '@/components/TableQuotation.vue';
 
 export default defineComponent({
@@ -150,7 +149,8 @@ export default defineComponent({
     MainHeader,
     Loading,
     TableQuotation,
-    Alert
+    Alert,
+    AccountSelector
   },
   data() {
     return {
@@ -180,14 +180,12 @@ export default defineComponent({
         img: string;
         className: string;
         date: string;
-      }[],
-      accounts: [] as Account[]
+      }[]
     };
   },
   methods: {
     initUserInfo(data: GetInfo) {
       this.name = `${data.name} ${data.surname}`;
-      this.accounts = data.accounts;
       this.office = data.office;
       this.accountNumber = data.accountNumber;
       this.wealth = this.$methods.formatCurrency(data.accounts[0].wealth, data.accounts[0].currency);
