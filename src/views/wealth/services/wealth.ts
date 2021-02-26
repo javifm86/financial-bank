@@ -7,6 +7,7 @@ export interface Summary {
   compositions: Composition[];
   graphs: Graph;
   evolution: Evolution[];
+  operatingLimit: OperatingLimit;
 }
 
 interface Composition {
@@ -27,10 +28,26 @@ interface GraphItem {
   percentage: number;
 }
 
-interface Evolution {
+export interface Evolution {
+  currency: string;
   dateValue: string;
   value: number;
   total: number;
+}
+
+export interface OperatingLimit {
+  exchange: LimitItem;
+  cfds: LimitItem;
+  derivatives: LimitItem;
+  forex: LimitItem;
+  funds: LimitItem;
+  plans: LimitItem;
+  transfers: LimitItem;
+}
+
+interface LimitItem {
+  limit: number;
+  currency: string;
 }
 
 class WealthService {
