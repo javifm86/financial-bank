@@ -11,7 +11,8 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "concat-api-db": "json-concat ./server-api/src/ ./server-api/db.json",
-    "postconcat-api-db": "prettier --write ./server-api/db.json"
+    "postconcat-api-db": "prettier --write ./server-api/db.json",
+    "generate-tailwind-colors-ts": "node ./scripts/tailwind-colors.js && prettier --write ./src/utils/tailwind-colors.ts"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
