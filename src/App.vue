@@ -16,6 +16,7 @@ import Footer from '@/layout/Footer.vue'; // @ is an alias to /src
 import Loading from '@/components/Loading.vue';
 import userService from '@/services/user/user';
 import store from '@/utils/store';
+import { setOptions } from 'highcharts';
 
 export default defineComponent({
   name: 'App',
@@ -30,10 +31,16 @@ export default defineComponent({
     };
   },
   created() {
+    setOptions({
+      credits: {
+        enabled: false
+      }
+    });
+
     userService
       .getInfo()
       .then((response) => {
-        const selectedAccount = response.data.accounts[0].id;
+        const selectedAccount = response.data.accounts[0];
         store.setAccounts(response.data.accounts);
         store.setSelectedAccount(selectedAccount);
       })

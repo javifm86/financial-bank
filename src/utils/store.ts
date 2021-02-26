@@ -11,14 +11,14 @@ interface Account {
 
 interface State {
   accounts: Account[];
-  idAccount: number;
+  accountSelected: Account;
 }
 
 export interface Store {
   debug: boolean;
   state: State;
   setAccounts: (newAccounts: Account[]) => void;
-  setSelectedAccount: (id: number) => void;
+  setSelectedAccount: (account: Account) => void;
 }
 
 const store: Store = {
@@ -26,7 +26,7 @@ const store: Store = {
 
   state: reactive<State>({
     accounts: [],
-    idAccount: 0
+    accountSelected: {} as Account
   }),
 
   setAccounts(newAccounts: Account[]) {
@@ -37,11 +37,11 @@ const store: Store = {
     this.state.accounts = newAccounts;
   },
 
-  setSelectedAccount(id: number) {
+  setSelectedAccount(account: Account) {
     if (this.debug) {
-      console.log('setSelectedAccount triggered with ', id);
+      console.log('setSelectedAccount triggered with ', account);
     }
-    this.state.idAccount = id;
+    this.state.accountSelected = account;
   }
 };
 

@@ -7,14 +7,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import store from '@/utils/store';
-import userService from '@/services/user/user';
 
 export default defineComponent({
   name: 'AccountSelector',
   emits: ['selected'],
   data() {
     return {
-      selected: store.state.idAccount
+      selected: store.state.accountSelected.id
     };
   },
   computed: {
@@ -22,7 +21,7 @@ export default defineComponent({
       return store.state.accounts;
     },
     selectedStore() {
-      return store.state.idAccount;
+      return store.state.accountSelected.id;
     }
   },
   watch: {
@@ -32,26 +31,11 @@ export default defineComponent({
   },
   methods: {
     update(): void {
-      store.setSelectedAccount(this.selected);
-      this.$emit('selected', this.selected);
-    }
-  },
-  created() {
-    if (!this.accounts.length) {
-      userService
-        .getInfo()
-        .then((response) => {
-          const selectedAccount = response.data.accounts[0].id;
-          store.setAccounts(response.data.accounts);
-          store.setSelectedAccount(selectedAccount);
-          // TODO: ¿Mover al servicio directamente?
-        })
-        .catch((e) => {
-          console.warn(e);
-        });
-      //   .finally(() => {
-
-      //   });
+      const selectedAccount = this.accounts.find((elem) => elem.id === this.selected);
+      if (selectedAccount != null) {
+        store.setSelectedAccount(selectedAccount);
+        this.$emit('selected', this.selected);
+      }
     }
   }
 });
