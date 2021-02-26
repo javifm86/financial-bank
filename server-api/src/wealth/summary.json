@@ -2,43 +2,43 @@
   "wealthSummary": [
     {
       "id": 1,
-      "total": 125032000,
+      "total": 116456380,
       "currency": "EUR",
       "compositions": [
         {
           "name": "Domestic exchange",
-          "value": 63200,
-          "percentage": 0.06301555159002943,
+          "value": 8613200,
+          "percentage": 7.396073963487445,
           "currency": "EUR"
         },
         {
           "name": "International exchange",
-          "value": 347102,
-          "percentage": 0.34608898715193664,
+          "value": 1347102,
+          "percentage": 1.156743838336723,
           "currency": "EUR"
         },
         {
           "name": "CFD's",
-          "value": 0,
-          "percentage": 0,
+          "value": 4857600,
+          "percentage": 4.17117550794555,
           "currency": "EUR"
         },
         {
           "name": "Derivatives",
-          "value": 0,
-          "percentage": 0,
+          "value": 1785000,
+          "percentage": 1.532762739147482,
           "currency": "EUR"
         },
         {
           "name": "Guarantees and adjustments",
-          "value": -530,
-          "percentage": -5.284532016,
+          "value": 0,
+          "percentage": 0,
           "currency": "EUR"
         },
         {
           "name": "Balance",
           "value": 99853478,
-          "percentage": 99.6,
+          "percentage": 85.7432439510828,
           "currency": "EUR"
         }
       ],
@@ -46,33 +46,41 @@
         "active": [
           {
             "description": "Fixed income",
-            "percentage": 99.59089546125803
+            "percentage": 85.7432439510828
           },
           {
             "description": "Equity market",
-            "percentage": 0.4091045387419661
+            "percentage": 11.84765151017523
+          },
+          {
+            "description": "Fixed market",
+            "percentage": 2.4091045387419661
           }
         ],
         "product": [
           {
             "description": "Domestic exchange",
-            "percentage": 0.06301555159002943
+            "percentage": 7.396073963487445
           },
           {
             "description": "International exchange",
-            "percentage": 0.34608898715193664
+            "percentage": 1.156743838336723
           },
           {
             "description": "CFD's",
-            "percentage": 0
+            "percentage": 4.17117550794555
           },
           {
             "description": "Guarantees and adjustments",
-            "percentage": -5.284532016
+            "percentage": 0
+          },
+          {
+            "description": "Derivatives",
+            "percentage": 1.532762739147482
           },
           {
             "description": "Balance",
-            "percentage": 99.6
+            "percentage": 85.7432439510828
           }
         ],
         "geographic": [
@@ -88,81 +96,126 @@
       },
       "evolution": [
         {
+          "currency": "EUR",
           "dateValue": "2019-12-31T20:00:00Z",
           "value": 100.0,
-          "total": 293928.77
+          "total": 82683542
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-01-31T20:00:00Z",
-          "value": 103.04556440664179,
-          "total": 302880.56
+          "value": 100.6786985492228,
+          "total": 83244714
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-02-29T20:00:00Z",
-          "value": 105.03982648585233,
-          "total": 308742.27
+          "value": 103.6464064396274,
+          "total": 85698520
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-03-31T20:00:00Z",
-          "value": 105.89256369834091,
-          "total": 311248.70999999996
+          "value": 101.8809414333024,
+          "total": 84238771
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-04-30T20:00:00Z",
-          "value": 106.96929055294584,
-          "total": 314413.51999999996
+          "value": 101.1387635038663,
+          "total": 83625112
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-05-31T20:00:00Z",
-          "value": 105.32010527584623,
-          "total": 309565.69
+          "value": 102.9899009406249,
+          "total": 85155698
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-06-30T20:00:00Z",
-          "value": 106.94471526900202,
-          "total": 314340.88
+          "value": 102.8325806361803,
+          "total": 85025620
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-07-31T20:00:00Z",
-          "value": 107.41117922610451,
-          "total": 315711.95
+          "value": 104.6698882348315,
+          "total": 86544771
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-08-31T20:00:00Z",
-          "value": 106.80935236658833,
-          "total": 313943.01
+          "value": 104.5261171806113,
+          "total": 86425896
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-09-30T20:00:00Z",
-          "value": 107.91190951170447,
-          "total": 331701.57
+          "value": 104.9235360526766,
+          "total": 86754496
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-10-31T20:00:00Z",
-          "value": 108.41062479003452,
-          "total": 333234.53
+          "value": 108.9983106916247,
+          "total": 90123664
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-11-30T20:00:00Z",
-          "value": 110.17389444292205,
-          "total": 338653.51
+          "value": 108.7830272196128,
+          "total": 89945660
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-12-31T20:00:00Z",
-          "value": 110.91405753978462,
-          "total": 340928.63
+          "value": 113.9968701389208,
+          "total": 94256650
         },
         {
+          "currency": "EUR",
           "dateValue": "2021-01-31T20:00:00Z",
-          "value": 109.92750958419903,
-          "total": 337896.17
+          "value": 117.6251423771855,
+          "total": 97256634
         },
         {
+          "currency": "EUR",
           "dateValue": "2021-02-28T20:00:00Z",
-          "value": 106.09847533351979,
-          "total": 326126.45
+          "value": 140.8459013524118,
+          "total": 116456380
         }
-      ]
+      ],
+      "operatingLimit": {
+        "exchange": {
+          "limit": 99853478,
+          "currency": "USD"
+        },
+        "cfds": {
+          "limit": 99853478,
+          "currency": "USD"
+        },
+        "derivatives": {
+          "limit": 99853478,
+          "currency": "USD"
+        },
+        "forex": {
+          "limit": 99853478,
+          "currency": "USD"
+        },
+        "funds": {
+          "limit": 99853478,
+          "currency": "USD"
+        },
+        "plans": {
+          "limit": 99853478,
+          "currency": "USD"
+        },
+        "transfers": {
+          "limit": 99853478,
+          "currency": "USD"
+        }
+      }
     },
     {
       "id": 2,
@@ -254,81 +307,126 @@
       },
       "evolution": [
         {
+          "currency": "EUR",
           "dateValue": "2019-12-31T20:00:00Z",
           "value": 100.0,
           "total": 293928.77
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-01-31T20:00:00Z",
           "value": 103.04556440664179,
           "total": 302880.56
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-02-29T20:00:00Z",
           "value": 105.03982648585233,
           "total": 308742.27
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-03-31T20:00:00Z",
           "value": 105.89256369834091,
           "total": 311248.70999999996
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-04-30T20:00:00Z",
           "value": 106.96929055294584,
           "total": 314413.51999999996
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-05-31T20:00:00Z",
           "value": 105.32010527584623,
           "total": 309565.69
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-06-30T20:00:00Z",
           "value": 106.94471526900202,
           "total": 314340.88
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-07-31T20:00:00Z",
           "value": 107.41117922610451,
           "total": 315711.95
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-08-31T20:00:00Z",
           "value": 106.80935236658833,
           "total": 313943.01
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-09-30T20:00:00Z",
           "value": 107.91190951170447,
           "total": 331701.57
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-10-31T20:00:00Z",
           "value": 108.41062479003452,
           "total": 333234.53
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-11-30T20:00:00Z",
           "value": 110.17389444292205,
           "total": 338653.51
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-12-31T20:00:00Z",
           "value": 110.91405753978462,
           "total": 340928.63
         },
         {
+          "currency": "EUR",
           "dateValue": "2021-01-31T20:00:00Z",
           "value": 109.92750958419903,
           "total": 337896.17
         },
         {
+          "currency": "EUR",
           "dateValue": "2020-02-28T20:00:00Z",
           "value": 106.09847533351979,
           "total": 326126.45
         }
-      ]
+      ],
+      "operatingLimit": {
+        "exchange": {
+          "limit": 936888,
+          "currency": "USD"
+        },
+        "cfds": {
+          "limit": 936888,
+          "currency": "USD"
+        },
+        "derivatives": {
+          "limit": 936888,
+          "currency": "USD"
+        },
+        "forex": {
+          "limit": 936888,
+          "currency": "USD"
+        },
+        "funds": {
+          "limit": 936888,
+          "currency": "USD"
+        },
+        "plans": {
+          "limit": 936888,
+          "currency": "USD"
+        },
+        "transfers": {
+          "limit": 936888,
+          "currency": "USD"
+        }
+      }
     }
   ]
 }
