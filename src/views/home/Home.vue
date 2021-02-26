@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="w-full sm:w-auto">
-        <AccountSelector />
+        <AccountSelector @selected="updateOverview()" />
       </div>
     </div>
     <Alert v-else kind="error" message="User information could not be loaded" :bordered="true" />
@@ -135,13 +135,25 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import userService, { GetInfo } from '@/services/user/user';
+import userService, { GetInfo, Account } from '@/services/user/user';
 import homeService, { MarketIdUpDown, Market, News, NewsTag } from './services/home';
+import store from '@/utils/store';
 import MainHeader from '@/components/MainHeader.vue';
 import Loading from '@/components/Loading.vue';
 import Alert from '@/components/Alert.vue';
 import AccountSelector from '@/components/AccountSelector.vue';
 import TableQuotation, { ElemQuotation } from '@/components/TableQuotation.vue';
+
+interface NewsHome {
+  id: number;
+  author: string;
+  title: string;
+  intro: string;
+  tag: NewsTag;
+  img: string;
+  className: string;
+  date: string;
+}
 
 export default defineComponent({
   name: 'Home',
@@ -171,26 +183,25 @@ export default defineComponent({
       drawUpsDowns: [] as ElemQuotation[],
       markets: [] as ElemQuotation[],
       marketsUpsDowns: [] as MarketIdUpDown[],
-      lastNews: [] as {
-        id: number;
-        author: string;
-        title: string;
-        intro: string;
-        tag: NewsTag;
-        img: string;
-        className: string;
-        date: string;
-      }[]
+      lastNews: [] as NewsHome[],
+      accountsInfo: [] as Account[]
     };
   },
   methods: {
     initUserInfo(data: GetInfo) {
+      this.accountsInfo = data.accounts;
       this.name = `${data.name} ${data.surname}`;
       this.office = data.office;
       this.accountNumber = data.accountNumber;
-      this.wealth = this.$methods.formatCurrency(data.accounts[0].wealth, data.accounts[0].currency);
-      this.operatingLimit = this.$methods.formatCurrency(data.accounts[0].operatingLimit, data.accounts[0].currency);
-      this.balance = this.$methods.formatCurrency(data.accounts[0].balance, data.accounts[0].currency);
+      this.updateOverview();
+    },
+    updateOverview() {
+      this.wealth = this.$methods.formatCurrency(this.accountSelected.wealth, this.accountSelected.currency);
+      this.operatingLimit = this.$methods.formatCurrency(
+        this.accountSelected.operatingLimit,
+        this.accountSelected.currency
+      );
+      this.balance = this.$methods.formatCurrency(this.accountSelected.balance, this.accountSelected.currency);
     },
     formatMarket(elem: Market): ElemQuotation {
       return {
@@ -200,7 +211,7 @@ export default defineComponent({
         className: elem.dif > 0 ? 'text-green-500' : elem.dif < 0 ? 'text-red-500' : ''
       };
     },
-    formatNews(elem: News) {
+    formatNews(elem: News): NewsHome {
       return {
         id: elem.id,
         author: elem.author,
@@ -209,7 +220,7 @@ export default defineComponent({
         tag: elem.tag,
         img: elem.img,
         className: this.getNewsClasses(elem.tag),
-        date: this.$methods.formatDate(elem.date)
+        date: this.$methods.formatDate(elem.date, { timeStyle: 'short' })
       };
     },
     getNewsClasses(tag: NewsTag) {
@@ -229,6 +240,9 @@ export default defineComponent({
   computed: {
     firstLoad() {
       return false;
+    },
+    accountSelected() {
+      return store.state.accountSelected;
     }
   },
   created() {
