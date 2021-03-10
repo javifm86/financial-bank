@@ -85,7 +85,7 @@
         <Alert v-else kind="error" message="User information could not be loaded" class="mb-4 shadow" />
       </section>
 
-      <div class="grid gap-8 gap-y-0 grid-cols-1 lg:grid-cols-2 mb-8">
+      <div class="grid gap-8 gap-y-6 grid-cols-1 lg:grid-cols-2 mb-8">
         <section>
           <h2 class="text-xl font-semibold text-gray-800 mb-3">Markets</h2>
           <TableQuotation v-if="markets.length" :elems="markets" />
