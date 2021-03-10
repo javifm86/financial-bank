@@ -1,6 +1,6 @@
 <template>
   <MainHeader>
-    <SectionMenu :elems="menu" class="mb-8" />
+    <MenuWealth />
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="mb-6 md:mb-0">
         <h1 class="text-3xl font-bold text-gray-900 text-center md:text-left">
@@ -17,7 +17,7 @@
       <Loading />
     </div>
     <section class="mt-4" v-else>
-      <div class="grid gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2 mb-8">
+      <div class="grid gap-x-8 gap-y-6 grid-cols-1 lg:grid-cols-2 mb-8">
         <section>
           <h2 class="text-xl font-semibold text-gray-800 mb-3">Summary</h2>
           <div class="bg-white rounded-xl shadow divide-y divide-gray-200 overflow-hidden">
@@ -95,44 +95,24 @@ import wealthService, { Summary, Graph, OperatingLimit, Evolution } from './serv
 import { Options as HighchartsOptions, SeriesPieOptions } from 'highcharts';
 
 import MainHeader from '@/components/MainHeader.vue';
-import SectionMenu, { SectionMenuItem } from '@/components/SectionMenu.vue';
 import Loading from '@/components/Loading.vue';
 import AccountSelector from '@/components/AccountSelector.vue';
 import VueHighchart from '@/components/Highcharts.vue';
+import MenuWealth from './MenuWealth.vue';
 
 import { ProductDistribution, OperatingLimitSummary, CustomPointOptionsObject } from './summary.models';
 
 export default defineComponent({
-  name: 'Home',
+  name: 'Summary',
   components: {
     MainHeader,
-    SectionMenu,
+    MenuWealth,
     AccountSelector,
     Loading,
     VueHighchart
   },
   data() {
-    const menu: SectionMenuItem[] = [
-      {
-        link: '/wealth/summary',
-        text: 'Summary'
-      },
-      {
-        link: '/',
-        text: 'Statements'
-      },
-      {
-        link: '/',
-        text: 'Transfers'
-      },
-      {
-        link: '/',
-        text: 'Report'
-      }
-    ];
-
     return {
-      menu: menu,
       loading: true,
       total: '',
       productsDistribution: [] as ProductDistribution[],
