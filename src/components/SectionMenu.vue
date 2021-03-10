@@ -28,9 +28,6 @@ export default defineComponent({
       type: Array as () => SectionMenuItem[],
       required: true
     }
-  },
-  data() {
-    return {};
   }
 });
 </script>
