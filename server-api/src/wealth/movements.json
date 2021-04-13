@@ -1,0 +1,219 @@
+{
+  "movements": {
+    "wealthSituation": [
+      {
+        "des": "Domestic exchange",
+        "ini": 37524002,
+        "end": 39336206,
+        "currency": "EUR"
+      },
+      {
+        "des": "International exchange",
+        "ini": 8432226,
+        "end": 8146892,
+        "currency": "EUR"
+      },
+      {
+        "des": "CFD's",
+        "ini": 1856237,
+        "end": 1963325,
+        "currency": "EUR"
+      },
+      {
+        "des": "Derivatives",
+        "ini": 150036,
+        "end": 30026,
+        "currency": "EUR"
+      },
+      {
+        "des": "Balance",
+        "ini": 3256804,
+        "end": 36425809,
+        "currency": "EUR"
+      }
+    ],
+    "wealthEvolution": {
+      "balanceInitial": 51219305,
+      "balanceEnd": 49476449,
+      "contributions": 153050,
+      "contributionsCash": 153050,
+      "contributionsEntryTransfer": 0,
+      "withdrawal": 81262,
+      "withdrawalCash": 81262,
+      "withdrawalOutputTransfer": 0,
+      "distributionsWithHoldingFunds": 0,
+      "profit": -1742856
+    },
+    "benchmarkEvolution": [
+      {
+        "name": "IBEX 35",
+        "endValue": 954920,
+        "month": 2.11,
+        "year": 11.82
+      },
+      {
+        "name": "DOW JONES",
+        "endValue": 2982390,
+        "month": 0.75,
+        "year": 7.23
+      },
+      {
+        "name": "NASDAQ 100",
+        "endValue": 1245530,
+        "month": -0.52,
+        "year": -3.85
+      },
+      {
+        "name": "DJ EURO STOXX 50",
+        "endValue": 351651,
+        "month": -0.25,
+        "year": -0.95
+      }
+    ],
+    "portfolioExchange": [
+      {
+        "name": "ARBITRAGE",
+        "titles": 1,
+        "endValue": 1120
+      },
+      {
+        "name": "BLUE NOTE",
+        "titles": 1,
+        "endValue": 752
+      },
+      {
+        "name": "EUROFINATEL",
+        "titles": 1,
+        "endValue": 1824
+      },
+      {
+        "name": "JESMALUZ INV",
+        "titles": 1,
+        "endValue": 980
+      },
+      {
+        "name": "MOPANI",
+        "titles": 1,
+        "endValue": 1796
+      },
+      {
+        "name": "QUALIFIED",
+        "titles": 1,
+        "endValue": 256
+      },
+      {
+        "name": "RELKO",
+        "titles": 1,
+        "endValue": 488
+      }
+    ],
+    "portfolioFunds": [
+      {
+        "name": "GLOBAL ALLOCATION, FI",
+        "shares": 0.858639,
+        "endValue": 1120,
+        "gainLosses": 12.7
+      },
+      {
+        "name": "GLOBAL FI",
+        "shares": 3.000066,
+        "endValue": 3624,
+        "gainLosses": 32.46
+      },
+      {
+        "name": "ACTIVOS GLOBALES CLASE I, FI",
+        "shares": 0.999696,
+        "endValue": 715,
+        "gainLosses": 29.29
+      },
+      {
+        "name": "PEGASUS FI CLASE R",
+        "shares": 1.457201,
+        "endValue": 2277,
+        "gainLosses": 42.49
+      }
+    ],
+    "portfolioPlans": [
+      {
+        "name": "RENTPENSIÓN VII F.P.(DÉDALO / COVEPRES)",
+        "shares": 590.954363,
+        "endValue": 853569,
+        "gainLosses": 6.44
+      },
+      {
+        "name": "RENTPENSIÓN II F.P. (RENTA FIJA)",
+        "shares": 105.125235,
+        "endValue": 167159,
+        "gainLosses": 29.35
+      }
+    ],
+    "movements": [
+      {
+        "concept": "INGRESO RECIBO",
+        "date": "",
+        "movement": 10050,
+        "balance": 3256804
+      },
+      {
+        "concept": "TRANSF. EMITIDA A MARIA TERESA SANCHEZ ALONSO",
+        "date": "",
+        "movement": -18000,
+        "balance": 3238804
+      },
+      {
+        "concept": "COMPRA DE RENTPENSIÓN VII F.P.(DÉDALO / COVEPRES)",
+        "date": "",
+        "movement": -10000,
+        "balance": 3228804
+      },
+      {
+        "concept": "INGRESO RECIBO",
+        "date": "",
+        "movement": 22000,
+        "balance": 3250804
+      },
+      {
+        "concept": "INGRESO RECIBO",
+        "date": "",
+        "movement": 25000,
+        "balance": 3275804
+      },
+      {
+        "concept": "TRANSF. EMITIDA A MARIA TERESA SANCHEZ ALONSO",
+        "date": "",
+        "movement": -35000,
+        "balance": 3240804
+      },
+      {
+        "concept": "VENTA DE 2 S2490 A 2,8304",
+        "date": "",
+        "movement": 566,
+        "balance": 3241370
+      },
+      {
+        "concept": "INGRESO RECIBO",
+        "date": "",
+        "movement": 10000,
+        "balance": 3251370
+      },
+      {
+        "concept": "TRANSF. EMITIDA A MARIA TERESA SANCHEZ ALONSO",
+        "date": "",
+        "movement": -20000,
+        "balance": 3231370
+      },
+      {
+        "concept": "COMPRA DE RENTPENSIÓN VII F.P.(DÉDALO / COVEPRES)",
+        "date": "",
+        "movement": -1473,
+        "balance": 3229897
+      },
+      {
+        "concept": "TCOMPRA DE RENTPENSIÓN VII F.P.(DÉDALO / COVEPRES)",
+        "date": "",
+        "movement": -1473,
+        "balance": 3228424
+      }
+    ]
+  }
+}
