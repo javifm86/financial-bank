@@ -4,9 +4,9 @@ export interface Movements {
   wealthSituation: ElemWealthSituation[];
   wealthEvolution: WealthEvolution;
   benchmarkEvolution: ItemBenchmarkEvolution[];
-  portfolioExchange: ItemPortfolioExchange[];
-  portfolioFunds: ItemFundsPlans[];
-  portfolioPlans: ItemFundsPlans[];
+  portfolioExchange?: ItemPortfolioExchange[];
+  portfolioFunds?: ItemFundsPlans[];
+  portfolioPlans?: ItemFundsPlans[];
   movements: ItemMovements[];
 }
 export interface ElemWealthSituation {
@@ -16,7 +16,7 @@ export interface ElemWealthSituation {
   currency: string;
 }
 
-interface WealthEvolution {
+export interface WealthEvolution {
   balanceInitial: number;
   balanceEnd: number;
   contributions: number;
@@ -27,26 +27,29 @@ interface WealthEvolution {
   withdrawalOutputTransfer: number;
   distributionsWithHoldingFunds: number;
   profit: number;
+  currency: string;
 }
 
-interface ItemBenchmarkEvolution {
+export interface ItemBenchmarkEvolution {
   name: string;
   endValue: number;
   month: number;
   year: number;
 }
 
-interface ItemPortfolioExchange {
+export interface ItemPortfolioExchange {
   name: string;
   titles: number;
   endValue: number;
+  currency: string;
 }
 
-interface ItemFundsPlans {
+export interface ItemFundsPlans {
   name: string;
   shares: number;
   endValue: number;
   gainLosses: number;
+  currency: string;
 }
 
 interface ItemMovements {
