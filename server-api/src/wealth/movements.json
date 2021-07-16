@@ -42,7 +42,8 @@
       "withdrawalCash": 81262,
       "withdrawalOutputTransfer": 0,
       "distributionsWithHoldingFunds": 0,
-      "profit": -1742856
+      "profit": -1742856,
+      "currency": "EUR"
     },
     "benchmarkEvolution": [
       {
@@ -73,38 +74,51 @@
     "portfolioExchange": [
       {
         "name": "ARBITRAGE",
-        "titles": 1,
-        "endValue": 1120
+        "titles": 42500,
+        "endValue": 4351120,
+        "currency": "EUR"
       },
       {
         "name": "BLUE NOTE",
-        "titles": 1,
-        "endValue": 752
+        "titles": 420,
+        "endValue": 8695752,
+        "currency": "EUR"
       },
       {
         "name": "EUROFINATEL",
-        "titles": 1,
-        "endValue": 1824
+        "titles": 1324,
+        "endValue": 1261824,
+        "currency": "EUR"
       },
       {
         "name": "JESMALUZ INV",
-        "titles": 1,
-        "endValue": 980
+        "titles": 80,
+        "endValue": 48980,
+        "currency": "EUR"
       },
       {
         "name": "MOPANI",
-        "titles": 1,
-        "endValue": 1796
+        "titles": 4478,
+        "endValue": 5691796,
+        "currency": "EUR"
       },
       {
         "name": "QUALIFIED",
-        "titles": 1,
-        "endValue": 256
+        "titles": 12229,
+        "endValue": 245656,
+        "currency": "EUR"
+      },
+      {
+        "name": "BANKINTER",
+        "titles": 1147,
+        "endValue": 1040990,
+        "currency": "EUR"
       },
       {
         "name": "RELKO",
-        "titles": 1,
-        "endValue": 488
+        "titles": 68563,
+        "endValue": 18000088,
+        "currency": "EUR"
       }
     ],
     "portfolioFunds": [
@@ -112,25 +126,29 @@
         "name": "GLOBAL ALLOCATION, FI",
         "shares": 0.858639,
         "endValue": 1120,
-        "gainLosses": 12.7
+        "gainLosses": 12.7,
+        "currency": "EUR"
       },
       {
         "name": "GLOBAL FI",
         "shares": 3.000066,
         "endValue": 3624,
-        "gainLosses": 32.46
+        "gainLosses": 32.46,
+        "currency": "EUR"
       },
       {
         "name": "ACTIVOS GLOBALES CLASE I, FI",
         "shares": 0.999696,
         "endValue": 715,
-        "gainLosses": 29.29
+        "gainLosses": 29.29,
+        "currency": "EUR"
       },
       {
         "name": "PEGASUS FI CLASE R",
         "shares": 1.457201,
         "endValue": 2277,
-        "gainLosses": 42.49
+        "gainLosses": 42.49,
+        "currency": "EUR"
       }
     ],
     "portfolioPlans": [
@@ -138,13 +156,15 @@
         "name": "RENTPENSIÓN VII F.P.(DÉDALO / COVEPRES)",
         "shares": 590.954363,
         "endValue": 853569,
-        "gainLosses": 6.44
+        "gainLosses": 6.44,
+        "currency": "EUR"
       },
       {
         "name": "RENTPENSIÓN II F.P. (RENTA FIJA)",
         "shares": 105.125235,
         "endValue": 167159,
-        "gainLosses": 29.35
+        "gainLosses": 29.35,
+        "currency": "EUR"
       }
     ],
     "movements": [
