@@ -14,6 +14,7 @@ interface FormatDateOptions {
 export interface Methods {
   formatCurrency(num: number, currency: string, decimals?: number): string;
   formatNumber(num: number, decimals?: number): string;
+  formatImport(num: number, decimals?: number): string;
   formatPercent(num: number, decimals?: number): string;
   formatDate(str: string | number, options?: DateOptions): string;
 }
@@ -29,6 +30,13 @@ class GlobalMethods implements Methods {
     }).format(num / precision);
   }
   formatNumber(num: number, decimals = 2) {
+    return new Intl.NumberFormat('en-US', {
+      style: 'decimal',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: decimals
+    }).format(num);
+  }
+  formatImport(num: number, decimals = 2) {
     const precision = Math.pow(10, decimals);
     return new Intl.NumberFormat('en-US', {
       style: 'decimal',
