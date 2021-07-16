@@ -206,7 +206,7 @@ export default defineComponent({
     formatMarket(elem: Market): ElemQuotation {
       return {
         name: elem.name,
-        last: this.$methods.formatNumber(elem.last),
+        last: this.$methods.formatImport(elem.last),
         dif: this.$methods.formatPercent(elem.dif),
         className: elem.dif > 0 ? 'text-green-500' : elem.dif < 0 ? 'text-red-500' : ''
       };
