@@ -17,6 +17,6 @@ export default defineComponent({
 
 <style scoped>
 .loading {
-  border-top-color: theme('colors.blue.800');
+  border-top-color: theme("colors.blue.800");
 }
 </style>

@@ -126,8 +126,8 @@ export default defineComponent({
 
 <style scoped>
 .alert {
-  border-top-color: theme('colors.gray.200');
-  border-bottom-color: theme('colors.gray.200');
-  border-right-color: theme('colors.gray.200');
+  border-top-color: theme("colors.gray.200");
+  border-bottom-color: theme("colors.gray.200");
+  border-right-color: theme("colors.gray.200");
 }
 </style>

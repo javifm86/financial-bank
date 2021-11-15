@@ -33,21 +33,27 @@ export default defineComponent({
 ::v-slotted(table) {
   @apply min-w-full divide-y divide-gray-200;
 }
+
 ::v-slotted(thead) {
   @apply bg-gray-50;
 }
+
 .no-custom-th ::v-slotted(th) {
   @apply text-xs;
 }
+
 ::v-slotted(th) {
   @apply px-5 py-3 font-semibold text-gray-500 uppercase tracking-wider;
 }
+
 ::v-slotted(tbody) {
   @apply bg-white divide-y divide-gray-200;
 }
+
 .no-custom-td ::v-slotted(td) {
   @apply text-sm;
 }
+
 ::v-slotted(td) {
   @apply p-5;
 }

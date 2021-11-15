@@ -30,6 +30,7 @@ export default defineComponent({
 <style scoped>
 nav.breadcrumb li + li::before {
   @apply mx-4 inline-block font-normal text-gray-300;
-  content: '/';
+
+  content: "/";
 }
 </style>
